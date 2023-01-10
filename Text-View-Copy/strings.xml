@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TextViewCopy</string>
+    <string name="button_1">Click to Display Message</string>
+</resources>
