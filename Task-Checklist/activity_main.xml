@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EditTextItem1"
+        android:layout_width="243dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditTextItem2"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextItem1" />
+
+    <EditText
+        android:id="@+id/EditTextItem3"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextItem2" />
+
+    <EditText
+        android:id="@+id/EditTextItem4"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextItem3" />
+
+    <EditText
+        android:id="@+id/EditTextItem5"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextItem4" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="onCheckboxClicked"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextItem1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="45dp"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextItem3"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextItem3"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextItem4"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextItem5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        android:onClick="onCheckboxClicked"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="287dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="30dp"
+        android:checked="false"
+        android:text="Congratulations - You have completed all of your tasks!"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextItem5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="onButtonClick"
+        android:text="Clear all tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
